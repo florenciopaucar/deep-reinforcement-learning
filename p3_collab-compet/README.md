@@ -8,7 +8,7 @@
 
 ### Introduction
 
-For this project, you will work with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
+For this project, you will work with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) Unity ML-Agent environment.
 
 ![Trained Agent][image1]
 
@@ -35,11 +35,19 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip) to obtain the "headless" version of the environment.  You will **not** be able to watch the agent without enabling a virtual screen, but you will be able to train the agent.  (_To watch the agent, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
 
-2. Place the file in the DRLND GitHub repository, in the `p3_collab-compet/` folder, and unzip (or decompress) the file. 
+2. Place the file in the `p3_collab-compet/` folder, and unzip (or decompress) the file. 
+
+3. Install the requirements of the application: pip install -r req.txt
 
 ### Instructions
 
-Follow the instructions in `Tennis.ipynb` to get started with training your own agent!  
+The code of the project start in Tennis.ipynb where you will run the cells to get your own agent or tune the hyperparameters. The project contain the following files.
+
+1. Tennis.ipynb: Contains the procedure to train the agent.
+2. Agent: It is defined the behaviour of the agent with includes the Deep Deterministic Policy Gradient Algorithm.
+3. Model: It is defined the architecture of the neural networks model for Actor and Critic model.
+4. actor_model.pth: This is the actor model obtained during training.
+5. critic_model.pth: This is the critic model obtained during training.
 
 ### (Optional) Challenge: Crawler Environment
 
