@@ -16,6 +16,11 @@ In this environment, a double-jointed arm can move to target locations. A reward
 
 The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 
+### Algorithm
+
+This application uses the Deep Deterministic policy to solve the problem. [DDPG](https://arxiv.org/pdf/1509.02971.pdf) adapts the ideas underlying the success of Deep Q-Learning to the continuous action domain. It is an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. This algorithm is able to find policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. 
+
+
 ### Distributed Training
 
 For this project, we will provide you an Unity environment containing 20 identical agents, each with its own copy of the environment.  
@@ -47,6 +52,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 2. Place the file in the DRLND GitHub repository, in the `p2_continuous-control/` folder, and unzip (or decompress) the file. 
 
+3. Install the requirements of the application: pip install -r req.txt
 ### Instructions
 
 The code of the project start in `Continuos_Control.ipynb` where you will run the cells to get your own agent or tune the hyperparameters. The project contain the following files.
